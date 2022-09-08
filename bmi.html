@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bmi</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="bmi.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img id="logo" src="image/logo2.svg" alt="" class="logo"></a>
+        <div>
+            <ul id="navbar"> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="fruit.html">Food Items</a></li>
+                <li><a href="bmi.html">Features</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><button onclick="window.location='signin.html'"><i class="bi bi-door-open-fill"></i>New user/ sign in</button></li>
+                <a href="#" id="close"><i class="bi bi-x-circle"></i></a>
+            </ul>
+        </div>
+        <div id="small">
+            <i id="ham" class="bi bi-list"></i>
+        </div>
+        
+    </section>
+
+    <section id="main">
+        <h1 id="title">BMI</h1>
+        <h1 id="title">Body Mass Index</h1>
+        <p id="def">Body mass index (BMI) is a person’s weight in kilograms divided by the square of height in meters. BMI is an inexpensive and easy screening method for weight category—underweight, healthy weight, overweight, and obesity. Here is the BMI calculator for adults</p>
+
+        <div class="calculator">
+            <div class="content">
+                <div class="input">
+                    <label for="height">Height</label>
+                    <input type="number" min="0" id="height" >
+                    <select name="" id="selecth">
+                        <option value="">cm</option>
+                        <option value="">feet</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="weight">Weight</label>
+                    <input type="number" min="0" id="weight" >
+                    <select name="" id="selectw">
+                        <option value="">kg</option>
+                        <option value="">pounds</option>
+                    </select>
+                </div>
+                <button onclick="calculateBmi()" id="calculate">Calculate BMI</button>
+            </div>
+            <div class="result">
+                
+                <div id="ans"></div>
+                <p id="status"></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="last">
+        <img src="image/bmi/bmitable.jpg" alt="">
+        <div class="detail">
+        <div class="det">
+            <h3>Pregnent Woman</h3>
+            <br>
+            <p>Usual BMI estimates do not apply if you’re pregnant. Pregnant or lactating women should not rely on these BMI readings.</p>
+        </div>
+        <div class="det">
+            <h3>Eat Right</h3>
+            <br>
+            <p>To lose weight, it's important to make lifestyle changes with a focus on reducing calories from food and beverages, a healthy eating plan, and portion control. This section will provide you with guidance and tools on how to eat right. Over time, these changes will become part of your everyday routine.</p>
+        </div>
+        <div class="det">
+            <h3>Control Your Weight</h3>
+            <br>
+            <p>Changing the way you approach weight loss can help you be more successful at weight management. Most people who are trying to lose weight focus on just the goal of weight loss. However, setting the right goals and focusing on lifestyle changes such as following a healthy eating plan, watching portion sizes, being physically active, and reducing sedentary time are much more effective.</p>
+        </div>
+    </div>
+    </section>
+    <script src="bmi.js"></script>
+</body>
+</html>
